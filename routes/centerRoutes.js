@@ -1,5 +1,3 @@
-// routes/centerRoutes.js
-
 const express = require('express');
 const { addCenter, getCenters, updateCenter, deleteCenter } = require('../controllers/centerController');
 const authenticateJWT = require('../middleware/authMiddleware');

@@ -1,5 +1,3 @@
-// models/Teacher.js
-
 const mongoose = require('mongoose');
 
 const teacherSchema = new mongoose.Schema({
@@ -10,6 +8,6 @@ const teacherSchema = new mongoose.Schema({
     specialization: { type: String, required: true },
     experience: { type: Number, required: true },
     document: { type: String } // URL or path to the uploaded document
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('Teacher', teacherSchema);
