@@ -1,5 +1,6 @@
 const Center = require('../models/Center');
 
+
 const addCenter = async (req, res) => {
     try {
         const center = new Center(req.body);

@@ -1,5 +1,6 @@
 const Teacher = require('../models/Teacher');
 
+
 const addTeacher = async (req, res) => {
     try {
         const teacher = new Teacher(req.body);
