@@ -4,6 +4,7 @@ const authRoutes = require('./routes/authRoutes');
 const centerRoutes = require('./routes/centerRoutes');
 const teacherRoutes = require('./routes/teacherRoutes');
 const studentRoutes = require('./routes/studentRoutes');
+const attendanceRoutes = require('./routes/attendanceRoutes');
 
 const app = express();
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/centers', centerRoutes);
 app.use('/api/teachers', teacherRoutes);
 app.use('/api/students', studentRoutes);
+app.use('/api/attendance', attendanceRoutes);
 app.get('/', (req, res) => {
     res.send('Welcome to the Tutoring Management System API');
 });
